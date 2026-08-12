@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { motion } from "motion/react";
 import { Phone, Mail, MapPin, Clock, CheckCircle, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -46,6 +46,8 @@ const contactInfo = [
 
 export default function Consultation() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -54,10 +56,28 @@ export default function Consultation() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = useCallback(async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-  };
+    setLoading(true);
+    setError("");
+    try {
+      const token = await (window as any).grecaptcha.execute(
+        "6Le1-4ItAAAAADafk3549bl24rTRVN9V8a0q4kGo",
+        { action: "contact" }
+      );
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, token }),
+      });
+      if (!res.ok) throw new Error("Verification failed");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please try again or call us directly.");
+    } finally {
+      setLoading(false);
+    }
+  }, [form]);
 
   return (
     <section id="consultation" className="py-28 bg-cream">
@@ -241,10 +261,16 @@ export default function Consultation() {
                     />
                   </div>
 
-                  <Button type="submit" variant="gold" size="lg" className="w-full">
+                  {error && (
+                    <p className="text-red-500 text-sm">{error}</p>
+                  )}
+                  <Button type="submit" variant="gold" size="lg" className="w-full" disabled={loading}>
                     <Send className="mr-2 h-4 w-4" />
-                    Send Message
+                    {loading ? "Sending…" : "Send Message"}
                   </Button>
+                  <p className="text-xs text-muted-foreground text-center">
+                    Protected by reCAPTCHA.
+                  </p>
                 </form>
               )}
             </div>

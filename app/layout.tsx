@@ -35,6 +35,7 @@ export default function RootLayout({
         {/* Film-grain texture overlay */}
         <div className="grain-overlay" aria-hidden="true" />
         {children}
+        <script src="https://www.google.com/recaptcha/api.js?render=6Le1-4ItAAAAADafk3549bl24rTRVN9V8a0q4kGo" async defer />
       </body>
     </html>
   );
