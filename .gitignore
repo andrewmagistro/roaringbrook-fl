@@ -1,0 +1,6 @@
+node_modules/
+.next/
+.env*
+public/hero-video.mp4
+roaring-brook-logo.png
+roaring-brook-logo copy.png
