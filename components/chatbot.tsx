@@ -53,7 +53,7 @@ const faqs: { keywords: string[]; answer: string }[] = [
   {
     keywords: ["chris", "attorney", "kimler", "lawyer", "who is"],
     answer:
-      "Chris Kimler is a licensed attorney and title agent who owns and operates Roaring Brook Abstract. He limits his law practice to real property, probate, and trust — and personally examines every title. He's also a shareholder in the Law Offices of Christopher R. Kimler, PC.",
+      "Chris Kimler is a licensed attorney and title agent who owns and operates Roaring Brook Abstract. He limits his law practice to real property and title — and personally examines every title. He's also a shareholder in the Law Offices of Christopher R. Kimler, PC.",
   },
   {
     keywords: ["refinance", "refi"],
@@ -68,7 +68,7 @@ const faqs: { keywords: string[]; answer: string }[] = [
   {
     keywords: ["probate", "trust", "estate", "will"],
     answer:
-      "Chris Kimler handles real property, probate, and trust matters through the Law Offices of Christopher R. Kimler, PC. For legal questions specific to your situation, please call Chris directly at (321) 498-0135 so he can advise you properly.",
+      "Chris Kimler handles real property matters through the Law Offices of Christopher R. Kimler, PC. For legal questions specific to your situation, please call Chris directly at (321) 498-0135 so he can advise you properly.",
   },
 ];
 

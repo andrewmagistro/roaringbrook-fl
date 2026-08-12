@@ -150,7 +150,7 @@ export default function PracticeAreas() {
             <span className="font-semibold">Law Offices of Christopher R. Kimler, PC</span>.
             If your deal requires legal representation, we can help with that as
             well — Chris limits his law practice to{" "}
-            <span className="font-semibold">real property, probate, and trust</span>.
+            <span className="font-semibold">real property and title</span>.
           </p>
         </motion.div>
       </div>

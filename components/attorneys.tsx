@@ -4,9 +4,9 @@ import { motion } from "motion/react";
 import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 
 const credentials = [
-  { label: "Licensed Attorney", sub: "State Bar" },
+  { label: "Licensed Attorney", sub: "NJ, PA, NY & FL Bar" },
   { label: "Licensed Title Agent", sub: "First American" },
-  { label: "Real Property Focus", sub: "Probate & Trust" },
+  { label: "Real Property Focus", sub: "Title & Closings" },
   { label: "BBB A+ Rated", sub: "Accredited Business" },
 ];
 
@@ -92,7 +92,7 @@ export default function Attorneys() {
                 <span className="font-medium text-cream">Roaring Brook Abstract</span>{" "}
                 is owned and run by <span className="font-medium text-cream">Chris Kimler</span> —
                 an attorney and title agent who limits his law practice to real
-                property, probate, and trust.
+                property and title.
               </p>
               <p>
                 In a market where you can't wait a week for a returned call — and

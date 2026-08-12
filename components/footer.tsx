@@ -6,7 +6,6 @@ const serviceLinks = [
   "Title Examination",
   "Real Estate Closings",
   "Real Property Law",
-  "Probate & Trust",
 ];
 
 const resourceLinks = [

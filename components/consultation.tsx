@@ -14,7 +14,6 @@ const serviceOptions = [
   "Title Examination",
   "Real Estate Closing",
   "Legal Representation (Real Property)",
-  "Probate / Trust",
   "Not Sure — Need Guidance",
 ];
 
