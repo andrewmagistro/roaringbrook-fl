@@ -61,7 +61,7 @@ export default function CaseResults() {
             </h2>
           </div>
           <p className="max-w-sm text-ink-soft">
-            Whether you're buying or selling, choose Roaring Brook Abstract for
+            Whether you're buying or selling, choose Roaring Brook Title & Escrow for
             your next real estate closing.
           </p>
         </motion.div>

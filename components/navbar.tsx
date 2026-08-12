@@ -43,7 +43,7 @@ export default function Navbar() {
           <a href="#" className="flex items-center group shrink-0">
             <img
               src="/logo-transparent.png"
-              alt="Roaring Brook Abstract"
+              alt="Roaring Brook Title & Escrow"
               className="h-11 w-auto transition-transform duration-500 group-hover:scale-[1.03]"
             />
           </a>

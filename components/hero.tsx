@@ -84,7 +84,7 @@ export default function Hero() {
           >
             When you need to move quickly on your real estate transaction, tell
             your lender or realtor you want{" "}
-            <span className="text-cream font-medium">Roaring Brook Abstract</span>.
+            <span className="text-cream font-medium">Roaring Brook Title & Escrow</span>.
             Attorney-owned and operated — we answer your calls and close your
             deal right away.
           </motion.p>

@@ -89,7 +89,7 @@ export default function Attorneys() {
           >
             <div className="space-y-6 text-lg leading-relaxed text-cream/75">
               <p>
-                <span className="font-medium text-cream">Roaring Brook Abstract</span>{" "}
+                <span className="font-medium text-cream">Roaring Brook Title & Escrow</span>{" "}
                 is owned and run by <span className="font-medium text-cream">Chris Kimler</span> —
                 an attorney and title agent who limits his law practice to real
                 property and title.
@@ -102,7 +102,7 @@ export default function Attorneys() {
               </p>
               <p>
                 Most deals only need a title search, examination, and policy — so
-                Roaring Brook Abstract is all you need. When a deal calls for legal
+                Roaring Brook Title & Escrow is all you need. When a deal calls for legal
                 representation, the{" "}
                 <span className="font-medium text-cream">Law Offices of Christopher R. Kimler, PC</span>{" "}
                 works right alongside us.

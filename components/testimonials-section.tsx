@@ -23,12 +23,12 @@ const testimonials: Testimonial[] = [
     role: "Home Buyer",
   },
   {
-    text: "My wife and I used Roaring Brook Abstract on two occasions. Both times we had a pleasant experience. Chris and Patti were very informative and professional, which made the process very easy. They were helpful and informative for our big purchase.",
+    text: "My wife and I used Roaring Brook Title & Escrow on two occasions. Both times we had a pleasant experience. Chris and Patti were very informative and professional, which made the process very easy. They were helpful and informative for our big purchase.",
     name: "DJ Gozzi",
     role: "Home Buyer",
   },
   {
-    text: "I've done business with Roaring Brook Abstract for years and have always been very satisfied. The office staff is exceptionally responsive, helpful and always kind. Chris Kimler, the Attorney, goes above and beyond for me and my clients.",
+    text: "I've done business with Roaring Brook Title & Escrow for years and have always been very satisfied. The office staff is exceptionally responsive, helpful and always kind. Chris Kimler, the Attorney, goes above and beyond for me and my clients.",
     name: "Sarah Tigue",
     role: "Real Estate Agent",
   },
@@ -38,12 +38,12 @@ const testimonials: Testimonial[] = [
     role: "Real Estate Professional",
   },
   {
-    text: "Excellent customer service and care given to my buyers. As a Realtor, the updates from Roaring Brook Abstract as to progress of closing were 100% on point keeping me informed. Feel confident referring your buyers to this company!",
+    text: "Excellent customer service and care given to my buyers. As a Realtor, the updates from Roaring Brook Title & Escrow as to progress of closing were 100% on point keeping me informed. Feel confident referring your buyers to this company!",
     name: "Lora Ubaldi",
     role: "Realtor",
   },
   {
-    text: "Chris and Patti at Roaring Brook Abstract handled our closing very efficiently and professionally and were a pleasure to work with. They handled all the paperwork as required, kept us informed along the way, and explained everything clearly.",
+    text: "Chris and Patti at Roaring Brook Title & Escrow handled our closing very efficiently and professionally and were a pleasure to work with. They handled all the paperwork as required, kept us informed along the way, and explained everything clearly.",
     name: "Michael Ando",
     role: "Home Buyer",
   },
@@ -85,7 +85,7 @@ export default function TestimonialsSection() {
             <span className="text-ink-soft text-sm ml-1">· 150+ Google Reviews</span>
           </div>
           <p className="text-center mt-4 text-ink-soft">
-            Buyers, sellers, realtors, and lenders trust Roaring Brook Abstract
+            Buyers, sellers, realtors, and lenders trust Roaring Brook Title & Escrow
             for every transaction.
           </p>
         </motion.div>

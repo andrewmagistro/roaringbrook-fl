@@ -53,7 +53,7 @@ const faqs: { keywords: string[]; answer: string }[] = [
   {
     keywords: ["chris", "attorney", "kimler", "lawyer", "who is"],
     answer:
-      "Chris Kimler is a licensed attorney and title agent who owns and operates Roaring Brook Abstract. He limits his law practice to real property and title — and personally examines every title. He's also a shareholder in the Law Offices of Christopher R. Kimler, PC.",
+      "Chris Kimler is a licensed attorney and title agent who owns and operates Roaring Brook Title & Escrow. He limits his law practice to real property and title — and personally examines every title. He's also a shareholder in the Law Offices of Christopher R. Kimler, PC.",
   },
   {
     keywords: ["refinance", "refi"],
@@ -73,7 +73,7 @@ const faqs: { keywords: string[]; answer: string }[] = [
 ];
 
 const GREETING =
-  "Hi! I'm the Roaring Brook Abstract virtual assistant. I can answer common questions about title insurance, closings, and our services.\n\nFor legal advice specific to your situation, please call Attorney Chris Kimler directly.\n\nHow can I help you today?";
+  "Hi! I'm the Roaring Brook Title & Escrow virtual assistant. I can answer common questions about title insurance, closings, and our services.\n\nFor legal advice specific to your situation, please call Attorney Chris Kimler directly.\n\nHow can I help you today?";
 
 const QUICK_QUESTIONS = [
   "What is title insurance?",
@@ -170,7 +170,7 @@ export default function Chatbot() {
             <div className="bg-navy-deep px-5 py-4 flex items-center gap-3">
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-cream/10 font-serif text-gold-light">R</span>
               <div className="flex-1">
-                <p className="text-cream font-semibold text-sm">Roaring Brook Abstract</p>
+                <p className="text-cream font-semibold text-sm">Roaring Brook Title & Escrow</p>
                 <div className="flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-green-400" />
                   <span className="text-white/60 text-xs">Online now</span>

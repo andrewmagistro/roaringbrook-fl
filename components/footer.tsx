@@ -141,7 +141,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10 py-6">
         <div className="container mx-auto px-6 max-w-7xl flex flex-col md:flex-row items-center justify-between gap-4 text-white/30 text-xs">
-          <p>© 2026 Roaring Brook Abstract. All rights reserved.</p>
+          <p>© 2026 Roaring Brook Title & Escrow. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-gold transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-gold transition-colors">Terms of Use</a>
