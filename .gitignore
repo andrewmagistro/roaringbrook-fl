@@ -1,8 +1,12 @@
 node_modules/
 .next/
 .env*
+!.env.example
 public/hero-video.mp4
 roaring-brook-logo.png
 roaring-brook-logo copy.png
 .DS_Store
 tsconfig.tsbuildinfo
+
+# Uploaded contracts — never commit these
+.uploads/
