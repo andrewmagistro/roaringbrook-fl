@@ -13,6 +13,7 @@ const siteLinks = [
   { label: "Reviews", href: "/reviews" },
   { label: "FAQs", href: "/faq" },
   { label: "Contact", href: "/contact" },
+  { label: "Start Your Closing", href: "/start-closing" },
   { label: "Submit a Contract", href: "/submit-contract" },
 ];
 

@@ -4,12 +4,36 @@ import { Building2, Home, MapPin, Laptop, CreditCard, Users, ArrowUpRight } from
 import PageHero from "@/components/page-hero";
 import CtaBand from "@/components/cta-band";
 import StatBar from "@/components/stat-bar";
+import ResourceDirectory from "@/components/resource-directory";
 
 export const metadata: Metadata = {
   title: "For Buyers & Sellers | Roaring Brook Title and Escrow Agency",
   description:
     "Convenient Florida closings for buyers and sellers — at our office, your realtor's office, your new home, or fully remote. Residential, commercial, and FSBO.",
 };
+
+const process = [
+  {
+    title: "Contract and order",
+    body: "Your agent, lender, or you send us the signed contract. We open the file, confirm receipt in writing, and tell you the closing date we're working toward.",
+  },
+  {
+    title: "Title search and examination",
+    body: "We pull the chain of title and the public record, then an attorney reviews what comes back — deeds, mortgages, liens, judgments, easements, and anything unusual.",
+  },
+  {
+    title: "Clearing title",
+    body: "If something needs fixing — an old mortgage never released, a missing heir, a probate or trust issue — we identify it early and clear it. This is the step most delays come from, and it's where being attorney-led matters most.",
+  },
+  {
+    title: "Closing preparation",
+    body: "We prepare the settlement statement, coordinate with the lender, verify every wire instruction, and send your figures ahead of time so there are no surprises at the table.",
+  },
+  {
+    title: "Closing and recording",
+    body: "You sign — at our office, yours, your new home, or remotely. We disburse funds, record the deed and mortgage with the county, and issue your title policy.",
+  },
+];
 
 const locations = [
   { icon: Building2, label: "Our office", sub: "Melbourne, Brevard County" },
@@ -57,8 +81,62 @@ export default function BuyersSellersPage() {
         </div>
       </section>
 
-      {/* Payment + experience */}
+      {/* How a closing works */}
       <section className="bg-cream py-24">
+        <div className="container mx-auto max-w-7xl px-6">
+          <div className="grid gap-14 lg:grid-cols-12">
+            <div className="lg:col-span-4">
+              <div className="lg:sticky lg:top-32">
+                <p className="eyebrow mb-4 text-brand/70">
+                  <span className="h-1 w-1 rounded-full bg-gold" /> How it works
+                </p>
+                <h2 className="font-serif text-4xl leading-[1.05] tracking-tight text-ink md:text-5xl">
+                  What actually happens{" "}
+                  <span className="italic text-brand">between contract and keys.</span>
+                </h2>
+                <p className="mt-6 leading-relaxed text-ink-soft">
+                  Most people go through this two or three times in a lifetime.
+                  Here is the whole process, start to finish, without the jargon.
+                </p>
+              </div>
+            </div>
+
+            <ol className="lg:col-span-8">
+              {process.map((step, i) => (
+                <li
+                  key={step.title}
+                  className="relative flex gap-6 pb-10 last:pb-0"
+                >
+                  {/* Rail */}
+                  <div className="flex flex-col items-center">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-brand/20 bg-card font-serif text-sm text-brand">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    {i < process.length - 1 && (
+                      <span
+                        className="mt-2 w-px flex-1 bg-border"
+                        aria-hidden="true"
+                      />
+                    )}
+                  </div>
+
+                  <div className="pt-1.5">
+                    <h3 className="font-serif text-2xl leading-snug tracking-tight text-ink">
+                      {step.title}
+                    </h3>
+                    <p className="mt-2.5 max-w-xl leading-relaxed text-ink-soft">
+                      {step.body}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      {/* Payment + experience */}
+      <section className="bg-background py-24">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="grid gap-5 lg:grid-cols-2">
             <div className="rounded-[1.6rem] border border-border bg-card p-9">
@@ -143,6 +221,8 @@ export default function BuyersSellersPage() {
           </div>
         </div>
       </section>
+
+      <ResourceDirectory />
 
       <StatBar />
       <CtaBand

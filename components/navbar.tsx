@@ -31,7 +31,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop tabs */}
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
+        <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Main">
           {navLinks.map((link) => {
             const active = pathname === link.href;
             return (
@@ -40,7 +40,7 @@ export default function Navbar() {
                 href={link.href}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "relative rounded-full px-4 py-2 text-sm font-medium transition-colors duration-300",
+                  "relative whitespace-nowrap rounded-full px-3 py-2 text-[13px] font-medium transition-colors duration-300 xl:text-sm",
                   active
                     ? "text-white"
                     : "text-white/70 hover:bg-white/10 hover:text-white"
@@ -60,17 +60,24 @@ export default function Navbar() {
         </nav>
 
         {/* Right side */}
-        <div className="hidden shrink-0 items-center gap-3 lg:flex">
+        <div className="hidden shrink-0 items-center gap-2 lg:flex">
           <a
             href="tel:3214980135"
-            className="flex items-center gap-1.5 text-sm font-medium text-white/70 transition-colors hover:text-white"
+            className="hidden items-center gap-1.5 whitespace-nowrap px-1 text-sm font-medium text-white/70 transition-colors hover:text-white 2xl:flex"
+            aria-label="Call (321) 498-0135"
           >
             <Phone className="h-3.5 w-3.5" />
             (321) 498-0135
           </a>
           <Link
+            href="/start-closing"
+            className="whitespace-nowrap rounded-full border border-white/25 px-4 py-2.5 text-[13px] font-semibold text-white transition-colors duration-300 hover:border-white/50 hover:bg-white/10 xl:px-5"
+          >
+            Start Your Closing
+          </Link>
+          <Link
             href="/submit-contract"
-            className="group inline-flex items-center gap-1.5 rounded-full bg-gold py-2.5 pl-5 pr-2.5 text-sm font-semibold text-brand-deep shadow-soft transition-colors duration-300 hover:bg-gold-light"
+            className="group inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-gold py-2.5 pl-4 pr-2 text-[13px] font-semibold text-brand-deep shadow-soft transition-colors duration-300 hover:bg-gold-light xl:pl-5 xl:pr-2.5"
           >
             Submit a Contract
             <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-deep/15 transition-transform duration-500 ease-expo group-hover:rotate-45">
@@ -122,6 +129,13 @@ export default function Navbar() {
               >
                 <Phone className="h-4 w-4 text-gold" /> (321) 498-0135
               </a>
+              <Link
+                href="/start-closing"
+                onClick={() => setMenuOpen(false)}
+                className="mt-1 rounded-full border border-white/25 px-5 py-3 text-center text-sm font-semibold text-white"
+              >
+                Start Your Closing
+              </Link>
               <Link
                 href="/submit-contract"
                 onClick={() => setMenuOpen(false)}
