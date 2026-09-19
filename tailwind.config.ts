@@ -44,6 +44,14 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        /* True brand navy — sampled from the Roaring Brook wordmark */
+        brand: {
+          DEFAULT: "#0B213C",
+          light: "#17406B",
+          mid: "#0F2C4E",
+          dark: "#081A30",
+          deep: "#050F1D",
+        },
         /* Coastal teal scale (legacy class name "navy" kept) */
         navy: {
           DEFAULT: "#0E5A6E",

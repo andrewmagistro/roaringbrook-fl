@@ -125,7 +125,7 @@ export default function Attorneys() {
             </div>
 
             <a
-              href="#consultation"
+              href="/contact"
               className="group mt-8 inline-flex items-center gap-2 text-sm font-semibold text-gold-light"
             >
               Work with Chris

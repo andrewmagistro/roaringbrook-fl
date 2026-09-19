@@ -1,64 +1,75 @@
-import { Phone, Mail, MapPin, Linkedin } from "lucide-react";
+import Link from "next/link";
+import { Phone, Mail, MapPin, Linkedin, ArrowUpRight } from "lucide-react";
 
-const serviceLinks = [
-  "Title Insurance Policies",
-  "Title Searches",
-  "Title Examination",
-  "Real Estate Closings",
-  "Real Property Law",
+const audienceLinks = [
+  { label: "Realtors", href: "/realtors" },
+  { label: "Lenders", href: "/lenders" },
+  { label: "Buyers & Sellers", href: "/buyers-sellers" },
+  { label: "Meet Chris Kimler", href: "/about" },
+];
+
+const siteLinks = [
+  { label: "Services", href: "/services" },
+  { label: "Reviews", href: "/reviews" },
+  { label: "FAQs", href: "/faq" },
+  { label: "Contact", href: "/contact" },
+  { label: "Submit a Contract", href: "/submit-contract" },
 ];
 
 const resourceLinks = [
-  { label: "First American Corporation", href: "https://www.firstam.com" },
+  { label: "First American Title", href: "https://www.firstam.com" },
   { label: "American Land Title Association", href: "https://www.alta.org" },
-  { label: "Florida Office of Insurance Regulation", href: "https://www.floir.com" },
   { label: "Florida Land Title Association", href: "https://www.flta.org" },
+  { label: "Florida Office of Insurance Regulation", href: "https://www.floir.com" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-deep">
+    <footer className="bg-brand-deep">
       {/* Top CTA band */}
-      <div className="border-b border-cream/10 py-14">
-        <div className="container mx-auto px-6 max-w-7xl flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="border-b border-white/10 py-14">
+        <div className="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 md:flex-row">
           <div>
-            <h3 className="text-cream font-serif text-3xl md:text-4xl tracking-tight">
+            <h2 className="font-serif text-3xl tracking-tight text-cream md:text-4xl">
               Ready to close your deal?
-            </h3>
-            <p className="text-cream/50 text-sm mt-2">
-              Fast, attorney-owned title services — calls returned same day.
+            </h2>
+            <p className="mt-2 text-sm text-cream/50">
+              Attorney owned and operated — calls returned the same day.
             </p>
           </div>
-          <a
-            href="#consultation"
-            className="flex-shrink-0 inline-flex items-center px-8 py-3.5 bg-gold hover:bg-gold-dark text-ink font-semibold rounded-full transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shadow-soft active:scale-[0.97]"
+          <Link
+            href="/submit-contract"
+            className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-gold py-3.5 pl-7 pr-2.5 font-semibold text-brand-deep shadow-soft transition-colors duration-300 hover:bg-gold-light"
           >
-            Contact Us Today
-          </a>
+            Submit a Contract
+            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand-deep/15 transition-transform duration-500 ease-expo group-hover:rotate-45">
+              <ArrowUpRight className="h-3.5 w-3.5" />
+            </span>
+          </Link>
         </div>
       </div>
 
       {/* Main footer */}
-      <div className="container mx-auto px-6 max-w-7xl py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="container mx-auto max-w-7xl px-6 py-16">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
-          <div className="lg:col-span-1">
-            <div className="mb-5">
-              <p className="font-serif text-2xl leading-tight tracking-tight text-cream">
-                Roaring Brook
-                <span className="block text-base uppercase tracking-[0.25em] text-gold/90">
-                  Abstract
-                </span>
-              </p>
-            </div>
-            <p className="text-white/50 text-sm leading-relaxed">
-              Attorney-led title work and closings for buyers, sellers, lenders,
-              and realtors across Brevard County and the Space Coast.
+          <div>
+            <img
+              src="/logo-rb-horizontal.png"
+              alt="Roaring Brook Title and Escrow Agency"
+              className="h-16 w-auto"
+            />
+            <p className="mt-6 text-sm leading-relaxed text-white/50">
+              Attorney owned and operated title, escrow, and closing services for
+              buyers, sellers, realtors, and lenders across Brevard County and
+              the Space Coast.
             </p>
-            <div className="flex gap-3 mt-6">
+            <div className="mt-6 flex gap-3">
               <a
-                href="#"
-                className="p-2 rounded-lg bg-white/5 hover:bg-gold/10 text-white/50 hover:text-gold transition-colors"
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg bg-white/5 p-2 text-white/50 transition-colors hover:bg-gold/10 hover:text-gold"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-4 w-4" />
@@ -66,20 +77,36 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services */}
+          {/* Who we serve + site */}
           <div>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-widest mb-5">
-              Our Services
-            </h4>
+            <h3 className="mb-5 text-sm font-semibold uppercase tracking-widest text-white">
+              Who we serve
+            </h3>
             <ul className="space-y-3">
-              {serviceLinks.map((link) => (
-                <li key={link}>
-                  <a
-                    href="#practice-areas"
-                    className="text-white/50 hover:text-gold text-sm transition-colors"
+              {audienceLinks.map(({ label, href }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-sm text-white/50 transition-colors hover:text-gold"
                   >
-                    {link}
-                  </a>
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <h3 className="mb-5 mt-8 text-sm font-semibold uppercase tracking-widest text-white">
+              Site
+            </h3>
+            <ul className="space-y-3">
+              {siteLinks.map(({ label, href }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-sm text-white/50 transition-colors hover:text-gold"
+                  >
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -87,9 +114,9 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-widest mb-5">
+            <h3 className="mb-5 text-sm font-semibold uppercase tracking-widest text-white">
               Resources
-            </h4>
+            </h3>
             <ul className="space-y-3">
               {resourceLinks.map(({ label, href }) => (
                 <li key={label}>
@@ -97,7 +124,7 @@ export default function Footer() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white/50 hover:text-gold text-sm transition-colors"
+                    className="text-sm text-white/50 transition-colors hover:text-gold"
                   >
                     {label}
                   </a>
@@ -106,32 +133,37 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Offices */}
+          {/* Office */}
           <div>
-            <h4 className="text-white font-semibold text-sm uppercase tracking-widest mb-5">
-              Our Offices
-            </h4>
+            <h3 className="mb-5 text-sm font-semibold uppercase tracking-widest text-white">
+              Our office
+            </h3>
             <ul className="space-y-5">
               <li className="flex gap-3">
-                <MapPin className="h-4 w-4 text-gold flex-shrink-0 mt-0.5" />
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden="true" />
                 <div>
-                  <p className="text-white font-medium text-sm">Melbourne Office</p>
-                  <p className="text-white/40 text-xs mt-0.5">
-                    [Melbourne, FL address — coming soon]<br />Brevard County, FL
+                  <p className="text-sm font-medium text-white">Melbourne Office</p>
+                  <p className="mt-0.5 text-xs text-white/40">
+                    [Melbourne, FL address — coming soon]
+                    <br />
+                    Brevard County, FL
                   </p>
                   <a
                     href="tel:3214980135"
-                    className="flex items-center gap-1.5 text-gold text-xs mt-1.5 hover:underline"
+                    className="mt-1.5 flex items-center gap-1.5 text-xs text-gold hover:underline"
                   >
                     <Phone className="h-3 w-3" /> (321) 498-0135
                   </a>
                 </div>
               </li>
               <li className="flex gap-3">
-                <Mail className="h-4 w-4 text-gold flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-white/80 text-sm">crkimler@kimlerlaw.com</p>
-                </div>
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden="true" />
+                <a
+                  href="mailto:crkimler@kimlerlaw.com"
+                  className="text-sm text-white/80 transition-colors hover:text-gold"
+                >
+                  crkimler@kimlerlaw.com
+                </a>
               </li>
             </ul>
           </div>
@@ -140,11 +172,18 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10 py-6">
-        <div className="container mx-auto px-6 max-w-7xl flex flex-col md:flex-row items-center justify-between gap-4 text-white/30 text-xs">
-          <p>© 2026 Roaring Brook Title & Escrow. All rights reserved.</p>
+        <div className="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-xs text-white/30 md:flex-row">
+          <p>
+            © {new Date().getFullYear()} Roaring Brook Title and Escrow Agency.
+            All rights reserved.
+          </p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-gold transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-gold transition-colors">Terms of Use</a>
+            <a href="#" className="transition-colors hover:text-gold">
+              Privacy Policy
+            </a>
+            <a href="#" className="transition-colors hover:text-gold">
+              Terms of Use
+            </a>
           </div>
         </div>
       </div>

@@ -146,7 +146,7 @@ export default function FAQ() {
           <p className="mt-4 text-ink-soft text-lg">
             Everything you need to know about title insurance and closings. Can't
             find your answer?{" "}
-            <a href="#consultation" className="text-navy underline underline-offset-4 hover:text-navy-light">
+            <a href="/contact" className="text-navy underline underline-offset-4 hover:text-navy-light">
               Contact us directly.
             </a>
           </p>
@@ -216,7 +216,7 @@ export default function FAQ() {
                 </a>
                 <span className="text-muted-foreground">·</span>
                 <a
-                  href="#consultation"
+                  href="/contact"
                   className="text-sm font-medium text-navy hover:text-navy-light underline underline-offset-4 transition-colors"
                 >
                   Contact Form

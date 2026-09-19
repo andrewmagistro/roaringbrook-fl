@@ -4,3 +4,5 @@ node_modules/
 public/hero-video.mp4
 roaring-brook-logo.png
 roaring-brook-logo copy.png
+.DS_Store
+tsconfig.tsbuildinfo
