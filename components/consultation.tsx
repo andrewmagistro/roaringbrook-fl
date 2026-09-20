@@ -27,13 +27,19 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Melbourne Office",
-    value: "Brevard County, FL",
-    sub: "[Melbourne, FL office address — coming soon]",
+    value: "1900 S. Harbor City Blvd, Suite 200",
+    sub: "1900 Building, Melbourne, FL 32901",
+  },
+  {
+    icon: MapPin,
+    label: "Service Area",
+    value: "Closings Done Statewide",
+    sub: "Remote and digital, wherever you are",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "crkimler@kimlerlaw.com",
+    value: "chris@kimlerlaw.com",
     sub: "We respond promptly",
   },
   {

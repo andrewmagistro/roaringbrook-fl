@@ -67,7 +67,7 @@ export default function Footer() {
             </p>
             <div className="mt-6 flex gap-3">
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/roaring-brook-title-and-escrow/posts/?feedView=all"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-lg bg-white/5 p-2 text-white/50 transition-colors hover:bg-gold/10 hover:text-gold"
@@ -137,7 +137,8 @@ export default function Footer() {
           {/* Office */}
           <div>
             <h3 className="mb-5 text-sm font-semibold uppercase tracking-widest text-white">
-              Our office
+              Our Home Office in Brevard County — or any of our satellite
+              offices serving all 67 counties in Florida
             </h3>
             <ul className="space-y-5">
               <li className="flex gap-3">
@@ -145,9 +146,11 @@ export default function Footer() {
                 <div>
                   <p className="text-sm font-medium text-white">Melbourne Office</p>
                   <p className="mt-0.5 text-xs text-white/40">
-                    [Melbourne, FL address — coming soon]
+                    1900 Building
                     <br />
-                    Brevard County, FL
+                    1900 South Harbor City Boulevard, Suite 200
+                    <br />
+                    Melbourne, FL 32901
                   </p>
                   <a
                     href="tel:3214980135"
@@ -160,11 +163,15 @@ export default function Footer() {
               <li className="flex gap-3">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden="true" />
                 <a
-                  href="mailto:crkimler@kimlerlaw.com"
+                  href="mailto:chris@kimlerlaw.com"
                   className="text-sm text-white/80 transition-colors hover:text-gold"
                 >
-                  crkimler@kimlerlaw.com
+                  chris@kimlerlaw.com
                 </a>
+              </li>
+              <li className="flex gap-3">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden="true" />
+                <p className="text-sm text-white/80">Closings Done Statewide</p>
               </li>
             </ul>
           </div>

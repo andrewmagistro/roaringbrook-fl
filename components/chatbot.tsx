@@ -43,12 +43,12 @@ const faqs: { keywords: string[]; answer: string }[] = [
   {
     keywords: ["location", "located", "address", "where are you", "office"],
     answer:
-      "We're located in Melbourne, FL, serving Brevard County and the Space Coast.\n\n📍 [Melbourne, FL office address — coming soon]\n📞 (321) 498-0135",
+      "Our main office is in Melbourne, FL, with satellite closing offices in Satellite Beach, Cocoa Beach, and Merritt Island.\n\n📍 1900 Building, 1900 South Harbor City Boulevard, Suite 200, Melbourne, FL 32901\n📞 (321) 498-0135",
   },
   {
     keywords: ["area", "county", "serve", "coverage", "where do you"],
     answer:
-      "We proudly serve Brevard County and the Space Coast, including Melbourne, Palm Bay, Cocoa Beach, Satellite Beach, Indialantic, Viera, Suntree, Rockledge, Titusville, Merritt Island, and surrounding communities.",
+      "We proudly serve Brevard County and the Space Coast, including Melbourne, Palm Bay, Cocoa Beach, Satellite Beach, Indialantic, Viera, Suntree, Rockledge, Titusville, Merritt Island, and surrounding communities. We also offer satellite closing offices in Satellite Beach, Cocoa Beach, and Merritt Island for client convenience.",
   },
   {
     keywords: ["chris", "attorney", "kimler", "lawyer", "who is"],

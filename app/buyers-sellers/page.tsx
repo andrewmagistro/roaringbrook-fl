@@ -4,7 +4,6 @@ import { Building2, Home, MapPin, Laptop, CreditCard, Users, ArrowUpRight } from
 import PageHero from "@/components/page-hero";
 import CtaBand from "@/components/cta-band";
 import StatBar from "@/components/stat-bar";
-import ResourceDirectory from "@/components/resource-directory";
 
 export const metadata: Metadata = {
   title: "For Buyers & Sellers | Roaring Brook Title and Escrow Agency",
@@ -221,8 +220,6 @@ export default function BuyersSellersPage() {
           </div>
         </div>
       </section>
-
-      <ResourceDirectory />
 
       <StatBar />
       <CtaBand

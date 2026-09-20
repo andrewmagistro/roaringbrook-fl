@@ -7,10 +7,10 @@ import nodemailer from "nodemailer";
  *
  *   RB_SMTP_HOST=smtp.office365.com
  *   RB_SMTP_PORT=587
- *   RB_SMTP_USER=crkimler@kimlerlaw.com
+ *   RB_SMTP_USER=chris@kimlerlaw.com
  *   RB_SMTP_PASS=<app password, not the account password>
- *   RB_MAIL_FROM="Roaring Brook Website <crkimler@kimlerlaw.com>"
- *   RB_NOTIFY_TO=crkimler@kimlerlaw.com
+ *   RB_MAIL_FROM="Roaring Brook Website <chris@kimlerlaw.com>"
+ *   RB_NOTIFY_TO=chris@kimlerlaw.com
  *
  * Notes:
  *  - Port 587 uses STARTTLS, port 465 uses implicit TLS. Both are fine.

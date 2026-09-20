@@ -24,9 +24,9 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="group flex shrink-0 items-center" aria-label="Roaring Brook Title and Escrow Agency — home">
           <img
-            src="/logo-rb-nav.png"
+            src="/logo-rb-horizontal.png"
             alt="Roaring Brook Title and Escrow Agency"
-            className="h-10 w-auto transition-opacity duration-300 group-hover:opacity-85"
+            className="h-12 w-auto transition-opacity duration-300 group-hover:opacity-85"
           />
         </Link>
 

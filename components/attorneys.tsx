@@ -60,7 +60,7 @@ export default function Attorneys() {
               {[
                 { icon: Phone, label: "Call", val: "(321) 498-0135", href: "tel:3214980135" },
                 { icon: MapPin, label: "Office", val: "Melbourne, FL", href: "#consultation" },
-                { icon: Mail, label: "Email", val: "Message", href: "mailto:crkimler@kimlerlaw.com" },
+                { icon: Mail, label: "Email", val: "Message", href: "mailto:chris@kimlerlaw.com" },
               ].map(({ icon: Icon, label, val, href }) => (
                 <a
                   key={label}
