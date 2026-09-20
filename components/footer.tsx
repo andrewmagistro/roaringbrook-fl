@@ -136,8 +136,8 @@ export default function Footer() {
 
           {/* Office */}
           <div>
-            <h3 className="mb-5 text-sm font-semibold uppercase tracking-widest text-white">
-              Our Home Office in Brevard County — or any of our satellite
+            <h3 className="mb-5 text-sm font-semibold text-white">
+              Our home office in Brevard County — or any of our satellite
               offices serving all 67 counties in Florida
             </h3>
             <ul className="space-y-5">
