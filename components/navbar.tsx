@@ -73,7 +73,7 @@ export default function Navbar() {
             href="/start-closing"
             className="whitespace-nowrap rounded-full border border-white/25 px-4 py-2.5 text-[13px] font-semibold text-white transition-colors duration-300 hover:border-white/50 hover:bg-white/10 xl:px-5"
           >
-            Start Your Closing
+            Order Title
           </Link>
           <Link
             href="/submit-contract"
@@ -134,7 +134,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className="mt-1 rounded-full border border-white/25 px-5 py-3 text-center text-sm font-semibold text-white"
               >
-                Start Your Closing
+                Order Title
               </Link>
               <Link
                 href="/submit-contract"

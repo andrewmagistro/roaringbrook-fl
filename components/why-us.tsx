@@ -6,7 +6,7 @@ import { Check } from "lucide-react";
 const points = [
   "Attorney led title company",
   "Responsive communication",
-  "Closings convenient for you — remote and digital closings",
+  "Closings convenient to you - in-person and remote/digital closings",
   "On time closings",
   "Clean commitments",
   "Insured closings and lender protection",
@@ -23,7 +23,7 @@ export default function WhyUs() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             viewport={{ once: true }}
-            className="lg:col-span-5"
+            className="lg:col-span-5 lg:self-center"
           >
             <p className="eyebrow mb-4 text-brand/70">
               <span className="h-1 w-1 rounded-full bg-gold" /> Why Roaring Brook
@@ -32,11 +32,6 @@ export default function WhyUs() {
               An attorney on your file,{" "}
               <span className="italic text-brand">start to finish</span>.
             </h2>
-            <p className="mt-6 max-w-md leading-relaxed text-ink-soft">
-              Most title companies hand the hard parts to outside counsel. We
-              handle them in house — which is why requirements get identified
-              early and closings stay on schedule.
-            </p>
           </motion.div>
 
           <div className="lg:col-span-7">
