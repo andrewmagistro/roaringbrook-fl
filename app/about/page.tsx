@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Scale, Landmark, MapPin, Award } from "lucide-react";
 import PageHero from "@/components/page-hero";
 import StatBar from "@/components/stat-bar";
+import FamilySlideshow from "@/components/family-slideshow";
 
 export const metadata: Metadata = {
   title: "Meet Chris Kimler | Roaring Brook Title and Escrow Agency",
@@ -113,7 +114,10 @@ export default function AboutPage() {
                   Chris lives with his wife of 28 years and his four children on
                   Merritt Island, Florida.
                 </p>
-                <ul className="mt-6 space-y-4 border-t border-border pt-6">
+                <div className="mt-6">
+                  <FamilySlideshow />
+                </div>
+                <ul className="space-y-4 border-t border-border pt-6">
                   {family.map(({ name, detail }) => (
                     <li key={name} className="flex gap-3">
                       <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
