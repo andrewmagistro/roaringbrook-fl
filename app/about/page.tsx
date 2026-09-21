@@ -137,7 +137,7 @@ export default function AboutPage() {
       <StatBar />
       <CtaBand
         heading="Work with Chris directly."
-        sub="Your file stays with our team — it doesn't get pushed off."
+        sub="Trusted, proven results with 30+ years of experience and 1000's of satisfied customers."
       />
     </>
   );
