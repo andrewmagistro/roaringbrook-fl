@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import PageHero from "@/components/page-hero";
 import PracticeAreas from "@/components/practice-areas";
 import AudienceCards from "@/components/audience-cards";
-import CtaBand from "@/components/cta-band";
 
 export const metadata: Metadata = {
   title: "Services | Roaring Brook Title and Escrow Agency",
@@ -21,7 +20,6 @@ export default function ServicesPage() {
       />
       <PracticeAreas />
       <AudienceCards />
-      <CtaBand />
     </>
   );
 }

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Building2, Home, MapPin, Laptop, CreditCard, Users, ArrowUpRight } from "lucide-react";
 import PageHero from "@/components/page-hero";
-import CtaBand from "@/components/cta-band";
 import StatBar from "@/components/stat-bar";
 
 export const metadata: Metadata = {
@@ -222,10 +221,6 @@ export default function BuyersSellersPage() {
       </section>
 
       <StatBar />
-      <CtaBand
-        heading="Have a signed contract?"
-        sub="Send it over and we'll open your file today."
-      />
     </>
   );
 }

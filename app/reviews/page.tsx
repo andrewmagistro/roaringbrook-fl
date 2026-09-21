@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import PageHero from "@/components/page-hero";
 import TestimonialsSection from "@/components/testimonials-section";
 import CaseResults from "@/components/case-results";
-import CtaBand from "@/components/cta-band";
 
 export const metadata: Metadata = {
   title: "Reviews | Roaring Brook Title and Escrow Agency",
@@ -21,7 +20,6 @@ export default function ReviewsPage() {
       />
       <TestimonialsSection />
       <CaseResults />
-      <CtaBand />
     </>
   );
 }

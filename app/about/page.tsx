@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Scale, Landmark, MapPin, Award } from "lucide-react";
 import PageHero from "@/components/page-hero";
 import StatBar from "@/components/stat-bar";
-import CtaBand from "@/components/cta-band";
 
 export const metadata: Metadata = {
   title: "Meet Chris Kimler | Roaring Brook Title and Escrow Agency",
@@ -135,10 +134,6 @@ export default function AboutPage() {
       </section>
 
       <StatBar />
-      <CtaBand
-        heading="Work with Chris directly."
-        sub="Trusted, proven results with 30+ years of experience and 1000's of satisfied customers."
-      />
     </>
   );
 }

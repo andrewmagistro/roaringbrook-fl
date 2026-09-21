@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import PageHero from "@/components/page-hero";
 import FeatureBlocks, { type FeatureBlock } from "@/components/feature-blocks";
 import StatBar from "@/components/stat-bar";
-import CtaBand from "@/components/cta-band";
 
 export const metadata: Metadata = {
   title: "For Lenders | Roaring Brook Title and Escrow Agency",
@@ -60,12 +59,6 @@ export default function LendersPage() {
       />
       <FeatureBlocks blocks={blocks} />
       <StatBar />
-      <CtaBand
-        heading="Order title for your next loan."
-        sub="Send the contract and we'll confirm receipt and timeline the same day."
-        ctaLabel="Order Title"
-        ctaHref="/start-closing"
-      />
     </>
   );
 }
