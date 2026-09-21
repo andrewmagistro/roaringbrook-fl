@@ -9,8 +9,6 @@ const audienceLinks = [
 ];
 
 const siteLinks = [
-  { label: "Services", href: "/services" },
-  { label: "Reviews", href: "/reviews" },
   { label: "FAQs", href: "/faq" },
   { label: "Contact", href: "/contact" },
   { label: "Start Your Closing", href: "/start-closing" },
