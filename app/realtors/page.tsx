@@ -13,9 +13,9 @@ export const metadata: Metadata = {
 const blocks: FeatureBlock[] = [
   {
     icon: "shield",
-    title: "Close with confidence.",
+    title: "Accuracy you can count on.",
     description:
-      "Every file is prepared with precision so closings stay accurate and free of last-minute surprises.",
+      "Every file is prepared with precision - your closings stay free of last-minute surprises.",
   },
   {
     icon: "handshake",
@@ -48,9 +48,9 @@ export default function RealtorsPage() {
     <>
       <PageHero
         eyebrow="For Realtors"
-        title="Closings that keep your deals"
-        italic="on track."
-        intro="You brought the deal together. We make sure the closing doesn't get in the way — accurate files, early requirements, and a team that answers the phone."
+        title="Close with Confidence."
+        italic="Every Deal. Every Time."
+        intro="You can be confident your deal is in the right hands. Accurate files, early requirements, and an experienced team working for you."
       />
       <FeatureBlocks blocks={blocks} />
       <StatBar />
