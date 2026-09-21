@@ -61,9 +61,9 @@ export default function Footer() {
               className="h-16 w-auto"
             />
             <p className="mt-6 text-sm leading-relaxed text-white/50">
-              Attorney owned and operated title, escrow, and closing services for
-              buyers, sellers, realtors, and lenders across Brevard County and
-              the Space Coast.
+              Attorney owned and operated title, escrow, and closing services
+              for buyers, sellers, realtors, and lenders based in Brevard
+              County and servicing all 67 counties in Florida.
             </p>
             <div className="mt-6 flex gap-3">
               <a
