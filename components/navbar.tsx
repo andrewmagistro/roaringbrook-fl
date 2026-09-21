@@ -8,10 +8,12 @@ import { Menu, X, Phone, ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
+  { label: "Home", href: "/" },
   { label: "Realtors", href: "/realtors" },
   { label: "Lenders", href: "/lenders" },
   { label: "Buyers & Sellers", href: "/buyers-sellers" },
   { label: "Meet Chris Kimler", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
