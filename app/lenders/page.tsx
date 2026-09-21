@@ -63,6 +63,8 @@ export default function LendersPage() {
       <CtaBand
         heading="Order title for your next loan."
         sub="Send the contract and we'll confirm receipt and timeline the same day."
+        ctaLabel="Order Title"
+        ctaHref="/start-closing"
       />
     </>
   );

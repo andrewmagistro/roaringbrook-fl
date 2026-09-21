@@ -4,9 +4,13 @@ import { ArrowUpRight, Phone } from "lucide-react";
 export default function CtaBand({
   heading = "Ready to open your file?",
   sub = "Send us the executed contract and we'll get started today.",
+  ctaLabel = "Submit a Contract",
+  ctaHref = "/submit-contract",
 }: {
   heading?: string;
   sub?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
 }) {
   return (
     <section className="bg-cream py-20">
@@ -20,10 +24,10 @@ export default function CtaBand({
           </div>
           <div className="flex shrink-0 flex-col gap-3 sm:flex-row sm:items-center">
             <Link
-              href="/submit-contract"
+              href={ctaHref}
               className="group inline-flex items-center gap-2 rounded-full bg-brand py-3.5 pl-6 pr-2.5 text-sm font-semibold text-white transition-colors duration-300 hover:bg-brand-light"
             >
-              Submit a Contract
+              {ctaLabel}
               <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/15 transition-transform duration-500 ease-expo group-hover:rotate-45">
                 <ArrowUpRight className="h-3.5 w-3.5" />
               </span>
