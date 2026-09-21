@@ -3,15 +3,11 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
-// TODO: swap these placeholders for real family photos, then update the
-// alt text for each (e.g. "Chris with his wife and kids on Merritt Island").
 const photos = [
-  { id: 1, src: "/chris-kimler.jpg", alt: "The Kimler family" },
-  { id: 2, src: "/chris-kimler.jpg", alt: "The Kimler family" },
-  { id: 3, src: "/chris-kimler.jpg", alt: "The Kimler family" },
-  { id: 4, src: "/chris-kimler.jpg", alt: "The Kimler family" },
-  { id: 5, src: "/chris-kimler.jpg", alt: "The Kimler family" },
-  { id: 6, src: "/chris-kimler.jpg", alt: "The Kimler family" },
+  { id: 1, src: "/family-beach.jpg", alt: "Chris Kimler with his wife and four children on the beach in Florida" },
+  { id: 2, src: "/family-wesley.jpg", alt: "Chris Kimler with his son Wesley, who serves in the United States Navy" },
+  { id: 3, src: "/family-abigail.jpg", alt: "Chris Kimler with his daughter Abigail at a soccer match in Tampa" },
+  { id: 4, src: "/family-evan.jpg", alt: "Chris Kimler with his son Evan, an Eagle Scout" },
 ];
 
 const VISIBLE = 3;
