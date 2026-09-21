@@ -64,8 +64,8 @@ export default function ServicesGrid() {
             <span className="h-1 w-1 rounded-full bg-gold" /> Services provided
           </p>
           <h2 className="font-serif text-4xl leading-[1.05] tracking-tight text-ink md:text-5xl">
-            Everything your closing needs,{" "}
-            <span className="italic text-brand">in one place</span>.
+            Everything you need,{" "}
+            <span className="italic text-brand">all in one place</span>.
           </h2>
         </motion.div>
 
