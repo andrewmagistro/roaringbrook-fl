@@ -16,6 +16,14 @@ const photos = [
 
 const VISIBLE = 3;
 
+// Slot 0 sits up front, center. Slots 1 and 2 peek out from behind it,
+// offset and rotated to the sides like a fanned stack of photos.
+const slotStyle = [
+  { x: 0, y: 0, rotate: 0, scale: 1, zIndex: 3, opacity: 1 },
+  { x: 30, y: -16, rotate: 9, scale: 0.86, zIndex: 2, opacity: 0.85 },
+  { x: -30, y: -16, rotate: -9, scale: 0.78, zIndex: 1, opacity: 0.65 },
+];
+
 export default function FamilySlideshow() {
   const [start, setStart] = useState(0);
 
@@ -33,19 +41,21 @@ export default function FamilySlideshow() {
   );
 
   return (
-    <div className="flex gap-2.5 overflow-hidden">
-      <AnimatePresence initial={false} mode="popLayout">
-        {visible.map((photo) => (
+    <div
+      className="relative mx-auto w-full max-w-[220px]"
+      style={{ aspectRatio: "1 / 1", perspective: 800 }}
+    >
+      <AnimatePresence initial={false}>
+        {visible.map((photo, i) => (
           <motion.img
             key={photo.id}
-            layout
             src={photo.src}
             alt={photo.alt}
-            initial={{ opacity: 0, x: 32, scale: 0.9 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            exit={{ opacity: 0, x: -32, scale: 0.9 }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="aspect-square w-1/3 shrink-0 rounded-xl border border-border object-cover object-top"
+            initial={{ x: -40, y: 10, rotate: -14, scale: 0.6, opacity: 0, zIndex: 0 }}
+            animate={slotStyle[i]}
+            exit={{ x: 44, y: 22, rotate: 14, scale: 0.6, opacity: 0, zIndex: 0 }}
+            transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            className="absolute inset-0 h-full w-full rounded-2xl border border-border object-cover object-top shadow-lift"
           />
         ))}
       </AnimatePresence>

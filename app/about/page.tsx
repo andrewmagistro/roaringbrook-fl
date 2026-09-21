@@ -128,7 +128,7 @@ export default function AboutPage() {
                   The family is rounded out by two dogs, Ollie and Knox, and a
                   cat named Loki.
                 </p>
-                <div className="mx-auto mt-6 max-w-sm">
+                <div className="mt-8">
                   <FamilySlideshow />
                 </div>
               </div>
