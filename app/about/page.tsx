@@ -114,9 +114,6 @@ export default function AboutPage() {
                   Chris lives with his wife of 28 years and his four children on
                   Merritt Island, Florida.
                 </p>
-                <div className="mt-6">
-                  <FamilySlideshow />
-                </div>
                 <ul className="space-y-4 border-t border-border pt-6">
                   {family.map(({ name, detail }) => (
                     <li key={name} className="flex gap-3">
@@ -131,6 +128,9 @@ export default function AboutPage() {
                   The family is rounded out by two dogs, Ollie and Knox, and a
                   cat named Loki.
                 </p>
+                <div className="mx-auto mt-6 max-w-xs">
+                  <FamilySlideshow />
+                </div>
               </div>
             </div>
           </div>
