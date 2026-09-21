@@ -29,8 +29,8 @@ export default function WhyUs() {
               <span className="h-1 w-1 rounded-full bg-gold" /> Why Roaring Brook
             </p>
             <h2 className="font-serif text-4xl leading-[1.05] tracking-tight text-ink md:text-5xl">
-              An attorney on your file,{" "}
-              <span className="italic text-brand">start to finish</span>.
+              Experienced Professionals{" "}
+              <span className="italic text-brand">with Proven Results</span>.
             </h2>
           </motion.div>
 

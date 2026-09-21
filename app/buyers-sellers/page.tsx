@@ -47,7 +47,7 @@ export default function BuyersSellersPage() {
         eyebrow="For Buyers & Sellers"
         title="Close where it's"
         italic="convenient for you."
-        intro="Buying or selling should not mean rearranging your week. We close on your schedule, in the place that works for you."
+        intro="Closings happen on your terms. We close on your schedule in a place that works best for you."
       />
 
       {/* Closing locations */}
