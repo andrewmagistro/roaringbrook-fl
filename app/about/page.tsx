@@ -43,8 +43,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="Meet Chris Kimler"
-        title="An attorney and title agent,"
-        italic="not one or the other."
+        title="Experienced Attorney"
+        italic="with Proven Results."
       />
 
       {/* Bio */}
