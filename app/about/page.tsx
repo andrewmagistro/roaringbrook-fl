@@ -58,7 +58,7 @@ export default function AboutPage() {
                   src="/chris-kimler.jpg"
                   alt="Christopher R. Kimler, attorney and title agent"
                   className="w-full rounded-inner object-cover object-top"
-                  style={{ aspectRatio: "4/5" }}
+                  style={{ aspectRatio: "900/1419" }}
                 />
               </div>
               <div className="mt-4 grid gap-px overflow-hidden rounded-[1.4rem] border border-border bg-border">
