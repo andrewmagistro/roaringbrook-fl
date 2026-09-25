@@ -92,9 +92,10 @@ export default function AboutPage() {
                   estate and title insurance.
                 </p>
                 <p>
-                  With 30 years of experience and over $1.5 billion in
-                  transactions, Chris and his team bring the kind of in-depth
-                  knowledge that only comes from handling files at that scale.
+                  Drawing on 30 years of experience and a track record of over
+                  $1.5 billion in transactions, Chris and his team deliver the
+                  specialized expertise that can only be developed by handling
+                  files at that volume.
                 </p>
                 <p>
                   Chris is licensed to conduct closings in{" "}
