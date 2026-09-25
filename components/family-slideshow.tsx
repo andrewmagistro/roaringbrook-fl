@@ -8,6 +8,7 @@ const photos = [
   { id: 2, src: "/family-wesley.jpg", alt: "Chris Kimler with his son Wesley, who serves in the United States Navy" },
   { id: 3, src: "/family-abigail.jpg", alt: "Chris Kimler with his daughter Abigail at a soccer match in Tampa" },
   { id: 4, src: "/family-evan.jpg", alt: "Chris Kimler with his son Evan, an Eagle Scout" },
+  { id: 5, src: "/family-zachary.jpg", alt: "Chris Kimler with his son Zachary at Merritt Island High School" },
 ];
 
 const VISIBLE = 3;
